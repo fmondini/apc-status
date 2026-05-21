@@ -64,6 +64,22 @@ where `server.fqdn.tld` is the server [FQDN](https://en.wikipedia.org/wiki/Fully
 
 *NOTE: Integer and Double fields are converted to their corresponding JSON values ​​by removing the String part.*
 
+### Example output (on error)
+
+	{
+		"rc": false,
+		"app": {
+			"date": "2026-05-21",
+			"vers": "0.9.0.rc",
+			"name": "ApcStatus"
+		},
+		"srv": {
+			"port": 3551,
+			"name": "host.fqdn.here"
+		},
+		"error": "java.net.UnknownHostException: host.fqdn.here"
+	}
+
 ### History
 |Date|Version|Description|
 |--|--|--|
